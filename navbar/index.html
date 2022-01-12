@@ -4,20 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css">
-    <title>Responsive navbar</title>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
   </head>
   <body>
-    <header class="header">
-        <a href="" class="logo">CSS Nav</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="#work">Our Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#careers">Careers</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <nav class="navbar">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <img src="./Frame.png" alt="hamburger" id="check-btn" />
+      </label>
+      <label class="logo">SKYWALKER</label>
+      <ul class="menu-list">
+        <ul>
+          <li class="menu-item"><a class="menu-link" href="#">About Us</a></li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Industries</a>
+          </li>
+          <li class="menu-item"><a class="menu-link" href="#">blog</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
         </ul>
-      </header>
+      </ul>
+    </nav>
   </body>
 </html>

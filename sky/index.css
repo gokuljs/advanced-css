@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  background: #1b1b1b;
+  color: #fff;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
+  background-image: url("./back.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 55rem -10rem;
+  background-position: fixed;
+}
+.row-section {
+  /* border: 1px solid white; */
+  display: block;
+  position: absolute;
+  padding: 1rem;
+  height: 70vh;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+
+.subtext-1 {
+  font-family: New Spirit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10rem;
+  line-height: 10rem;
+  white-space: nowrap;
+}
+.subtext-1-orange {
+  color: #e8a24f;
+  text-decoration: underline;
+  text-decoration-thickness: 0.1em;
+  text-decoration-thickness: 3px;
+}
+.subtext-2 {
+  font-family: Hero New;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 31px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    background-position: 49rem -10rem;
+  }
+  .subtext-1 {
+    font-size: 9.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    background-position: 40rem -7rem;
+  }
+  .subtext-1 {
+    font-size: 8rem;
+    line-height: 8rem;
+  }
+  .subtext-2 {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .header {
+    background-position: 26rem -7rem;
+  }
+  .subtext-1 {
+    font-size: 7.5rem;
+    line-height: 7.5rem;
+  }
+  .subtext-2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .subtext-1 {
+    font-size: 6.5rem;
+    line-height: 7rem;
+  }
+  .header {
+    background-position: 7rem -19rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .row-section {
+    top: 39%;
+    left: 53%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+  .subtext-1 {
+    padding: 0;
+    font-size: 5.5rem;
+    line-height: 6rem;
+  }
+  .subtext-2 {
+    padding: 0;
+    margin: 0;
+  }
+  .header {
+    height: 80vh;
+    background-position: 1rem -15rem;
+  }
+}
